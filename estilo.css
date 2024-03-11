@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark{
+    --color-bg: #ddd;
+    --color-texto: #ee6352;
+  }
+  
+  body.dark-theme {
+    --color-bg: rgb(47, 47, 47);
+    --color-texto: #ffb847;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      --color-bg: rgb(47, 47, 47);
+      --color-texto: #ffb847;
+    }
+    body.light-theme {
+      --color-bg: #ddd;
+      --color-texto: #ee6352;
+    }
+  }
+  body {
+    background-color: var(--color-bg);
+  }
+  
+  h1 {
+    color: var(--color-texto);
+  }
+  
+
+
+.efecto-glass {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: rgba(41, 24, 24, 0.8); /* Cambié el color y agregué transparencia */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(253, 5, 5);
+}
+
+.formulario {
+    position: absolute;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Agregué la unidad de medida (%) */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entrada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(253, 5, 5);
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.entrada input {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+::placeholder {
+    color: #ddd;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.opciones a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #fff;
+    padding: 7px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
